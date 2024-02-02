@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+     
+}
+.heading{
+    background:linear-gradient(black,red)   ;
+    width: 100%;
+    height: 50px;    
+}
+.heading h1{
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
+}
+.tarjeta{
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background:linear-gradient(blue,black);
+}
+
+
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+.btn{
+    margin: auto;
+    width: 200px;
+    height: 3.4rem;
+    background: yellow;
+    color: blue;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 1rem;
+       
+}
+
+.btn:hover{
+    margin: auto;
+    width: 200px;
+    height: 3.4rem;
+    background: rgb(82, 64, 67);
+    color: #b9cf13;
+    font-size: 1.9rem;
+    font-weight: 700;
+    border-radius: .7rem;
+       
+}
+
+.cajas{
+    border: .4rem solid yellow;
+    border-radius:1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: -57px -32px 18px -13px rgba(10,6,1,0.6);
+    text-align: justify;
+    width: 85%;
+    height: 300px;
+    color:black;
+}
+
+.cajas:hover{
+    border: .4rem solid rgb(230, 6, 6);
+    border-radius:1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: -57px -32px 18px -13px rgba(65, 36, 2, 0.6);
+    text-align: justify;
+    width: 85%;
+    height: 300px;
+    color:white;
+    background:turquoise;
+}
