@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.cajamayor{
+    width: 100vw;
+    position: relative;
+    height: 100vh;   
+    background:lightblue;
+    margin-bottom: 2rem;
+}
+
+.alerta{
+    position:fixed;
+    background: #0a3871;
+    color: #d8dfe8;
+    text-align: center;
+    border-radius: 2%;
+    width: 50%;
+    height: 5%;
+    top: 0%;
+    left: 20%;
+    padding: 0.4%;
+    margin-top: .7%;
+    display: none;   
+}
+
+.alerta p{
+    font-size: 26px;
+    font-weight: 400;  
+}
+.cajamayor img{
+   
+    top: 5%;
+    left: 30%;
+    margin-top: 1%;
+    
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 50%;
+    left: 12%;
+    top: 12%;
+    border-radius: 32px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: rgb(249, 250, 250); 
+    padding: 1%;
+    box-shadow: 1px 13px 20px 7px rgba(0,0,0,0.55);
+}
+
+.texto  : placeholder{
+    color: #0a3871 ;    
+}
+
+texto:focus,
+texto:active{
+    border: none;
+    outline: none;
+
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    color: blue;
+    left: 12%;
+    top: 75%;
+}
+
+.mensaje p{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495067;   
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.cajabotones{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1% 0;
+  position: absolute;
+  width: 90%;
+  left: 12%;
+  top: 78%;
+}
+
+.btn-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 28px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffff;
+    margin: 1px;
+}
+
+.btn-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24Px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;    
+    margin: 1px;
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover{
+margin: .3%;
+width: 24.5%;
+padding: 1.8%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;    
+    position: absolute;
+    width: 25%;
+    height: 85%;
+    left: 70%;
+    top: 5%;
+    background: #ffff;
+    box-shadow: 1px 13px 20px 7px rgba(0,0,0,0.55);
+    border-radius: 32px;
+}
+.mensaje22{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 1%;
+gap: 16px;
+position: absolute;
+width: 100%;
+top: 75%;
+text-align: center;
+
+}
+
+.content h2{
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;    
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+    
+}
+
+.content p{
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 150px;
+    text-align: center;
+    color: #495057;
+    font-size: 10px;
+
+}
+.content img{
+    position: absolute;
+    width: 80%; 
+    height: 50%; 
+    top: 15%; 
+    left: 5%;
+    
+}
+
+
+@media(max-width:1024px){
+    .cajamayor{
+        display: flex;
+        flex-direction: row;            
+    }
+
+    .cajamayor img{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 2%;
+        left: 5%;
+        padding: 0%;
+    }
+    .texto{
+        width:  80%; 
+        height: 40%;  
+        left:5%;     
+        top: 12%; 
+        display: flex;
+        justify-content: center;       
+    }
+    .mensaje{
+        top: 60%;
+        width: 100%;
+    }
+
+    .cajabotones{
+        width: 70%;
+        left: 10%;
+        top: 64%;
+    }
+    .cajabotones p{
+         font-size: 16Px;
+         top: 70%;
+         margin-bottom: 2rem ;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover{
+        margin: .3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .content{
+        width: 80%;
+        height: 25%;
+        left: 5%;
+        top: 72%;        
+    }
+    .mensaje22{
+        width: 100%;
+        top: 5%;
+
+    }
+     
+    .content img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+
+    }
+    }
+
+
+    @media(max-width:400px){
+        .cajamayor{
+            display: flex;
+            flex-direction: column;            
+        }
+
+        .cajamayor img{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 5%;
+            left: 5%;
+            padding: 1%;
+        }
+        .texto{
+            width:  80%; 
+            height: 40%;  
+            left: z|0%;     
+            top:12%;        
+        }
+        .mensaje{
+            top: 60%;
+            width: 100%;
+        }
+    
+        .cajabotones{
+            width: 80%;
+            left: 10%;
+            top: 64%;
+        }
+        .cajabotones p{
+             font-size: 12Px;
+             top: 50%;
+             margin-bottom: 2rem ;
+        }
+    
+        .btn-encriptar,
+        .btn-desencriptar{
+            width: 48%;
+            border-radius: 16px;
+        }
+    
+        .btn-encriptar:hover,
+        .btn-desencriptar:hover{
+            margin: .3%;
+            width: 47.5%;
+            padding: 1.8%;
+        }
+        .content{
+            width: 90%;
+            height: 15%;
+            left: 5%;
+            top: 80%;        
+        }
+        .mensaje22{
+            width: 100%;
+            top: 5%;
+        }
+
+        .mensaje22 h2{ 
+            font-size: 16px;
+        }
+         
+        .content img{
+            top: 0;
+            display: none;
+            visibility: hidden;
+    
+        }
+        }
+

@@ -4,34 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador ONE Desafio</title>
-    <link rel="stylesheet" href="css/nuevoStylo.css">
+    <link rel="stylesheet" href="css/stylacho.css">
 </head>
-<body>
-<header class="heading">
-<h1>Encriptador ONE Desafio Chalenller</h1>
-</header>
-<section class="tarjeta">
-    <div class="">
-       
-            <textarea class="cajas" name="entradaTexto" id="entradaTexto" cols="30" rows="10">
+<body >        
 
-            </textarea>
-      
+<section class="cajamayor">
+    <div class="alerta">
+        <p>Ni Acentos Ni signos Especiales ni mayusculas,
+            Por Favor Borre Y Coloque Letras Minusculas Solamente
+        </p>
     </div>
-    <div class="botones">
-        <button id="encri" class="btn">Encriptar</button>
-        <button id="desen" class="btn">Desencriptar</button>
-    </div>
-    <div class="">
+    <img src="/imagen/Logo (1).png" alt="logo">
    
-            <textarea class="cajas" name="entradaTexto" id="salidaTexto" cols="30" rows="10">
-                
-            </textarea>
+            <textarea class="texto" name="texto" id="texto" cols="30" rows="10"
+            placeholder="Ingrese el texto aqui"></textarea><br/>
+       
+        <div class="mensaje">
+            <p>Solo Letras Minusculas Y Sin Acento</p>
+        </div>
+        <div class="cajabotones">
+                <button type="button" class="btn-encriptar" >Encriptar</button>
+                <button type="button" class="btn-desencriptar">Desencriptar</button>
 
-    </div>
+        </div>
+   
+   
+       
+   <div class="content">
+        <img id="muneco" src="/imagen/Muñeco (1).png" alt="">  
+         <!-- <textarea name="mensa" id="mensa" cols="30" rows="10">vacio</textarea> --> 
+        <div class="mensaje22">
+            <h2 id="mensajeDeExito"> Ningun Mensaje Encontrado</h2>
+            <p id="alerta2" class="parrafo">solo letras minusculas  no incluir numeros letras con acento ni signos especiales</p>
+           
+        </div> 
+</div>    
 
+    
 </section>
-<footer>
+
+
+
+
+<footer class="footer">
 
 </footer>
 <script src="js/encriptador.js"></script>
