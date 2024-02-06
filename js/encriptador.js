@@ -53,9 +53,9 @@ btnDesencri.addEventListener('click',()=>{
   var t = document.getElementById('texto').value  
   
   var palabra =desencriptar(t)
-  document.getElementById('muneco').setAttribute('src','imagen/muneco.png')            
+  // document.getElementById('muneco').setAttribute('src','imagen/muneco.png')            
  
-  localStorage.removeItem('frase')
+  // localStorage.removeItem('frase')
   const audio = new Audio("js/exitodesen.mp3");
   audio.play();
 })
@@ -77,7 +77,7 @@ btnEncri.addEventListener('click',()=>{
      document.getElementById('mensaResp').innerText = cifrado ;
      et.value=''
      et.setAttribute('placeholder','Ingrese el texto aqui')     
-      document.getElementById('muneco').setAttribute('src','imagen/pulgar.png')           
+      // document.getElementById('muneco').setAttribute('src','imagen/pulgar.png')           
     
       const audio = new Audio("js/mensajeExito.mp3");
       audio.play();
