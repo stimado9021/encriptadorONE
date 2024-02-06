@@ -56,7 +56,7 @@
     box-shadow: 1px 13px 20px 7px rgba(0,0,0,0.55);
 }
 
-.texto  : placeholder{
+.texto:placeholder{
     color: #0a3871 ;    
 }
 
@@ -160,48 +160,42 @@ padding: 1.8%;
     box-shadow: 1px 13px 20px 7px rgba(0,0,0,0.55);
     border-radius: 32px;
 }
-.mensaje22{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 1%;
-gap: 16px;
-position: absolute;
-width: 100%;
-top: 75%;
-text-align: center;
 
+#mensaResp{
+    padding: 3%;    
+    margin-top: 2%;    
+    border-radius: 5%;
+    width: 90%;
+    height:  55%;
+    left: 10%;
+    top: 25%;  
+    font-size: 32px;  
+    font-weight: 600;
 }
 
-.content h2{
-    width: 80%;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;    
-    line-height: 120%;
-    text-align: center;
-    color: #343a40;
+#mensaResp:hover {
+    background: whitesmoke;
+}
+
+.content img{
+    position: absolute;
+    width: 40%; 
+    height: 30%; 
+    top: 60%; 
+    left: 5%;
     
 }
 
-.content p{
-    width: 60%;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 150px;
-    text-align: center;
-    color: #495057;
-    font-size: 10px;
-
-}
-.content img{
+.btnCopiar{
+    background-color: #3c4588;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    left: 45%;
+    top: 75%;
     position: absolute;
-    width: 80%; 
-    height: 50%; 
-    top: 15%; 
-    left: 5%;
+    width: 50%;
+    height: 10%;
+    color: white;
+    border-radius: 32px;
     
 }
 
@@ -236,20 +230,27 @@ text-align: center;
     .cajabotones{
         width: 70%;
         left: 10%;
-        top: 64%;
+        top: 58%;
+        display: flex;
+        flex-direction: column;
+        
     }
     .cajabotones p{
-         font-size: 16Px;
-         top: 70%;
+         font-size: 12px;
+         top: 54%;
          margin-bottom: 2rem ;
+         justify-content: center;
     }
 
     .btn-encriptar,
-    .btn-desencriptar{
-        width: 48%;
-        border-radius: 16px;
-    }
-
+        .btn-desencriptar{
+            width: 100%;
+            border-radius: 16px;
+            font-size: 12px;
+            left: 30%;
+            margin-top: 1% ;
+            
+        }
     .btn-encriptar:hover,
     .btn-desencriptar:hover{
         margin: .3%;
@@ -262,18 +263,26 @@ text-align: center;
         left: 5%;
         top: 72%;        
     }
-    .mensaje22{
-        width: 100%;
-        top: 5%;
-
-    }
+   
      
     .content img{
         top: 0;
         display: none;
         visibility: hidden;
-
     }
+    .btnCopiar{
+        background-color: #3c4588;
+        border: 1px solid rgba(0, 0, 0, 0.7);
+        left: 25%;
+        top: 85%;
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        color: white;
+        border-radius: 32px;  
+        padding: 2%;      
+    }
+
     }
 
 
@@ -294,7 +303,7 @@ text-align: center;
         .texto{
             width:  80%; 
             height: 40%;  
-            left: z|0%;     
+            left: 10%;     
             top:12%;        
         }
         .mensaje{
@@ -306,45 +315,64 @@ text-align: center;
             width: 80%;
             left: 10%;
             top: 64%;
+            display: flex;
+            flex-direction: column;
         }
         .cajabotones p{
-             font-size: 12Px;
+             font-size: 8px;
              top: 50%;
              margin-bottom: 2rem ;
         }
     
         .btn-encriptar,
         .btn-desencriptar{
-            width: 48%;
+            width: 100%;
             border-radius: 16px;
+            font-size: 12px;
+            left: 30%;
+            margin-top: 1% ;
+            
         }
     
         .btn-encriptar:hover,
         .btn-desencriptar:hover{
-            margin: .3%;
+            margin: .8%;
             width: 47.5%;
             padding: 1.8%;
         }
         .content{
             width: 90%;
-            height: 15%;
+            height: 25%;
             left: 5%;
-            top: 80%;        
+            top: 75%;  
+            margin-bottom: 1%;      
         }
         .mensaje22{
             width: 100%;
             top: 5%;
         }
 
-        .mensaje22 h2{ 
+        /* .mensaje22 h2{ 
             font-size: 16px;
-        }
+        } */
          
         .content img{
             top: 0;
             display: none;
             visibility: hidden;
-    
         }
+        .btnCopiar{
+            background-color: #3c4588;
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            left: 25%;
+            top: 80%;
+            position: absolute;
+            width: 50%;
+            height: 15%;
+            color: white;
+            border-radius: 32px; 
+            padding: 2%;            
+        }
+
         }
 
